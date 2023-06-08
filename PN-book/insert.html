@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<style>
+    html {
+        background: url(dan-wayman-5twimJ0bLFE-unsplash.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
+
+<head>
+    <title>Thêm sách</title>
+    <link href="css/insert.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <meta charset="utf-8">
+
+    <!--HTML Form -->
+    <div class="out">
+        <a href="./admin_logout.php" class="btn_logout">Đăng xuất</a>
+    </div>
+    <div class="form_div">
+        <div class="title">
+            Thêm sách
+        </div>
+        <div class="div_form-a">
+            <form action="insert.php" method="post" enctype="multipart/form-data">
+                <!-- Method can be set as POST for hiding values in URL-->
+                <h2>Nhập thông tin sách</h2>
+                <label>Thêm PID:</label>
+                <input class="input" name="PID" type="file" value="" accept=".jpg">
+                <!-- <label>Thêm hình ảnh:</label> -->
+                <!-- <input class="input" name="Image" type="file" value=""> -->
+                <label>Thêm tiêu đề:</label>
+                <input class="input" name="Title" type="text" value="">
+                <label>Thêm tác giả:</label>
+                <input class="input" name="Author" type="text" value="">
+                <label>MRP:</label>
+                <input class="input" name="MRP" type="number" value="" min="0" step="1">
+                <label>Thêm giá sách:</label>
+                <input class="input" name="Price" type="number" value="" min="0" step="1">
+                <label>Thêm số lượng:</label>
+                <input class="input" name="Available" type="number" value=""  min="0" step="1">
+                <label>Thêm nxb:</label>
+                <input class="input" name="Publisher" type="text" value="">
+                <label>Thêm thể loại</label>
+                <select name="Them the loai">
+                    <option value="Văn học và viễn tưởng">Văn học và viễn tưởng</option>
+                    <option value="Học thuật">Học thuật</option>
+                    <option value="Tiểu sử và tự truyện">Tiểu sử và tự truyện</option>
+                    <option value="Trẻ em và thanh thiếu niên">Trẻ em và thanh thiếu niên</option>
+                    <option value="Tâm lý và kỹ năng sống">Tâm lý và kỹ năng sống</option>
+    
+                    <option value="Quản lý kinh doanh">Quản lý kinh doanh</option>
+                    <option value="Sức khỏe và nấu ăn">Sức khỏe và nấu ăn</option>
+                </select>
+    
+                <input class="input" name="Category" type="" value="">
+                <label>Thêm mô tả:</label>
+                <input class="input" name="Description" type="text" value="">
+                <label>Them ngôn ngữ:</label>
+                <input class="input" name="Language" type="text" value="">
+                <label>Số trang:</label>
+                <input class="input" name="Page" type="number" value="">
+                <label>Trọng lượng:</label>
+                <input class="input" name="weight" type="number" value="">
+                <input class="submit" name="submit" type="submit" value="Thêm">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
